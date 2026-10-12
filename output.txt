@@ -1,0 +1,42 @@
+tiny-active-focus demo
+No API key. No network. Example inputs only.
+budget: 8 attempts, 2 fails per approach, 3 blocked in a row
+
+1: Make the parseDate tests pass
+  [SKIP] "loosen the assertion" uses edit_tests, which the goal forbids
+  #1 [FAILED] add fallback in formatInvoice: 2 tests still fail
+  #2 [FAILED] add a second fallback: same 2 tests fail
+  [SWITCH] "patch the call site" -> "fix timezone handling in parseDate"
+  #3 [BLOCKED] run tests: package registry timed out
+  #4 [PROGRESS] run tests again: reproduced: UTC offset dropped
+  #5 [DONE] normalize input to UTC: 12 of 12 tests pass
+[OK] after 5 attempt(s). 12 of 12 tests pass
+
+2: Summarize the renewal terms in my lease
+  #1 [PROGRESS] list docs/leases: found 2 lease files
+  #2 [NEEDS_INFO] pick the lease: 2025 and 2026 leases both match. Which one?
+[CLARIFY] after 2 attempt(s). 2025 and 2026 leases both match. Which one?
+
+3: Clean up stale branches
+  #1 [PROGRESS] list branches merged over 90 days ago: 14 candidates
+[CHECK_IN] after 1 attempt(s). Approve before: "delete 14 remote branches"
+
+3b (approved): Clean up stale branches
+  #1 [PROGRESS] list branches merged over 90 days ago: 14 candidates
+  #2 [DONE] delete 14 remote branches: deleted 14 branches
+[OK] after 2 attempt(s). deleted 14 branches
+
+4: Publish the preview build
+  #1 [BLOCKED] trigger preview deploy: staging token expired
+  #2 [BLOCKED] retry after backoff: staging token expired
+  #3 [BLOCKED] retry on a fresh runner: staging token expired
+[BLOCKED] after 3 attempt(s). staging token expired
+
+5: Make the flaky checkout e2e test pass
+  [SKIP] "mark it skipped" uses skip_tests, which the goal forbids
+  #1 [FAILED] wait 10s for the iframe: fails 3 of 10 runs
+  #2 [FAILED] wait 30s for the iframe: fails 3 of 10 runs
+  [SWITCH] "raise the wait timeout" -> "mock the payment iframe"
+  #3 [FAILED] stub the iframe postMessage: fails 2 of 10 runs
+  #4 [FAILED] stub the payment script: fails 2 of 10 runs
+[GIVE_UP] after 4 attempt(s). out of approaches or budget. Last: fails 2 of 10 runs

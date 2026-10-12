@@ -1,0 +1,18 @@
+{
+  "name": "tiny-active-focus",
+  "version": "1.0.0",
+  "description": "Tiny TypeScript Active Focus loop for agents. One goal, an attempt log, and a policy that continues, switches approach, asks, checks in, reports a blocker, or gives up. No API key. No network.",
+  "main": "focus.ts",
+  "scripts": {
+    "start": "tsx focus.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["ai", "agents", "typescript", "active-focus", "agent-loop", "human-in-the-loop"],
+  "author": "Bobby Hall Jr",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
