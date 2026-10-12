@@ -30,3 +30,7 @@ Expected output is in [`output.txt`](output.txt).
 ## License
 
 MIT
+
+## Write-up
+
+Full walkthrough on Dev.to: https://dev.to/bobbyhalljr/meta-launched-muse-wonder-lets-build-a-tiny-active-focus-loop-in-typescript-4oi9
