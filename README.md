@@ -33,4 +33,5 @@ MIT
 
 ## Write-up
 
-Full walkthrough on Dev.to: https://dev.to/bobbyhalljr/meta-launched-muse-wonder-lets-build-a-tiny-active-focus-loop-in-typescript-4oi9
+- Dev.to: https://dev.to/bobbyhalljr/meta-launched-muse-wonder-lets-build-a-tiny-active-focus-loop-in-typescript-4oi9
+- Substack: https://bobbyhalljr.substack.com/p/meta-launched-muse-wonder-lets-build
